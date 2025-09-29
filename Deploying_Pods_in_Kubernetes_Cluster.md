@@ -48,7 +48,7 @@ metadata:
 spec:
   containers:
   - image: httpd:latest
-    name: httdp-container
+    name: httpd-container
 ```
 <br>
 
