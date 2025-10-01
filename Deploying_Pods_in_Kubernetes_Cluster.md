@@ -1,6 +1,6 @@
 ## Deploying Pods in Kubernetes Cluster
 
-For this demo, we will a pod named ```pod-httpd``` using the ```httpd``` image with the ```latest``` tag using the ```kubectl``` commmand. We will then set the ```app``` label to ```httpd_app```, and name the container as ```httpd-container```.
+For this demo, we will a pod named ```pod-httpd``` using the ```httpd``` image with the ```latest``` tag using the ```kubectl``` commmand. We will then set the ```app``` label to ```httpd_app```, and name the container as ```httpd-container```. To know more about Deployments and pods, you can visit this [link](https://github.com/AdrianM756/Kubernetes_Documentation/blob/main/Pods_vs_Deployments.md) for a more info.
 
 ```
 kubectl run pod-httpd --image=httpd:latest --labels=app=httpd_app --dry-run=client --output=yaml > pod-httpd.yaml
